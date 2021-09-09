@@ -84,12 +84,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="TiendaManejador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos.tienda\AccesoDatos.tienda.csproj">
+      <Project>{02722428-63e2-46f8-b521-778081d3ba18}</Project>
+      <Name>AccesoDatos.tienda</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tienda\Tienda.csproj">
+      <Project>{b3538e8f-d824-498a-bd82-6f87de97a5f4}</Project>
+      <Name>Tienda</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
